@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>register</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+      body {
+        font-family: "poppins";
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+      }
+
+      .btn-primary {
+        background-color: rgb(39, 146, 57);
+        border: none;
+      }
+      .btn-primary:hover {
+        background-color: #0e6425 !important;
+      }
+
+      @media (max-width: 932px) {
+        .hidden {
+          display: none !important;
+        }
+      }
+    </style>
+  </head>
+
+  <!-- max column = 12 
+  sm= small
+  md= medium
+-->
+
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bolder">IDN</a>
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="row m-0 h-100">
+
+      <div class="col d-flex justify-content-center align-items-center">
+        <form class="w-75">
+          <h3 class="text-center mb-4">login to your account</h3>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div>
+            <label for="exampleInputPassword1" class="form-label"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+            />
+          </div>
+          <div class="col-auto">
+            <span id="passwordHelpInline" class="form-text">
+              Must be 8-20 characters long.
+            </span>
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary w-75 mt-4 me-5">
+              Submit
+            </button>
+            <button  type="submit" class="btn btn-outline-primary  mt-4 ms-5 w-25 ">
+              <a href="login.html" class="text-decoration-none text-reset .">login</a>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="col d-flex justify-content-center align-items-center hidden">
+        <img src="img/pitc-register.svg" alt="image login" class="w-75 h-75" />
+      </div>
+    </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">yakin dek?</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Make sure your email and password are correct
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
